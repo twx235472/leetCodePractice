@@ -70,13 +70,13 @@ public class Solution {
         if (head == null || head.next == null) {
             return false;
         }
-        ListNode turtle = head;
+        ListNode turtule = head;
         ListNode rabbit = head.next;
-        while (turtle != rabbit) {
-            if (rabbit == null || rabbit.next == null) {
+        while (turtule != rabbit) {
+            if(rabbit == null || rabbit.next == null){
                 return false;
             }
-            turtle = turtle.next;
+            turtule = turtule.next;
             rabbit = rabbit.next.next;
         }
         return true;

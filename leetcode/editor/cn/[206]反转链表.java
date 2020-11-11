@@ -26,12 +26,12 @@ class Solution {
     }
 
     private ListNode reverseInt(ListNode head, ListNode newHead) {
-        if(head == null){
+        if (head == null) {
             return newHead;
         }
         ListNode next = head.next;
         head.next = newHead;
-        return reverseInt(next,head);
+        return reverseInt(next,head)
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
