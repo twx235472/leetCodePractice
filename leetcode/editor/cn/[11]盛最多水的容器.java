@@ -60,7 +60,7 @@ class Solution {
             if(height[min] < height[max]){
                 min++;
             }else {
-                s
+
             }
         }
         return maxArea;
